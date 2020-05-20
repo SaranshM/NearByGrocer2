@@ -1,0 +1,366 @@
+body
+{
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:500px)
+{
+    *
+    {
+        margin:0;
+        padding:0;
+    }
+
+    body
+    {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+
+    /*Contents
+
+    1. Nav Bar
+    2. Search Bar
+    3. Product Slideshow
+    4. Top Categories
+    5. Misc Categories
+    6. Brands
+    7. Idem Scroll
+    8. Plus
+
+    */
+
+    /*--------1. Nav Bar----------*/
+
+    .nav_bar
+    {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        border:solid grey;
+        border-width:0 0 1px 0;
+    }
+
+    .hamburger img,.pencil img,.cart img
+    {
+        width:70%;
+    }
+
+    /*-------------------------*/
+
+    /*--------2. Search Bar----------*/
+
+    .search_bar
+    {
+        padding:3% 0;
+    }
+
+    .search
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item
+    {
+        background-color: rgb(210,210,210);
+        border-radius: 30px;
+        border:none;
+        padding:2.5%;
+        width:50%;
+        margin-right: 1.5%;
+    }
+
+    .item:focus
+    {
+        outline:none !important;
+    }
+
+    .submit_search
+    {
+        border:none;
+        background-color: transparent;
+        margin-left: 1.5%;
+    }
+
+    /*-------------------------*/
+
+    /*-------3. Product Slide Show-------*/
+
+    .swiper-container
+    {
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-container .swiper-slide
+    {
+        position: relative;
+        top:30%;
+        left:40%;
+    }
+
+    /*--------------------------------*/
+
+    /*--------4. Top Categories----------*/
+
+    .categories
+    {
+        background-color: rgb(240,240,240);
+        padding: 4% 0 8% 0;
+    }
+
+    .categories_heading
+    {
+        display:flex;
+        justify-content: space-between;
+        width:95%;
+        margin:0 auto;
+    }
+
+    .categories_heading a
+    {
+        text-decoration: none;
+        color:rgb(19, 161, 19);
+    }
+
+    .category_grid
+    {
+        width:95%;
+        margin:0 auto;
+    }
+
+    .category_row
+    {
+        display:flex;
+        justify-content: space-between;
+        margin-top: 8%;
+    }
+
+    .category_img
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .caption
+    {
+        font-size: 2.5vw;
+        margin-top: 3%;
+    }
+
+    /*-------------------------*/
+
+    /*--------5. Misc Categories----------*/
+
+    .misc_categories
+    {
+        padding:4% 0 8% 0;
+    }
+
+    .misc_category
+    {
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        margin:0 auto;
+        border:solid grey;
+        border-width:0 0 1px 0;
+        align-items: center;
+    }
+
+    .misc_category_arrows
+    {
+        transform: scale(0.7);
+    }
+
+    /*------------------------------------*/
+
+    /*--------6. Brands-------------*/
+
+    .brands
+    {
+        background-color: rgb(240,240,240);
+        padding: 4% 0 8% 0;
+    }
+
+    .brands_heading
+    {
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        margin:0 auto 4% auto;
+    }
+
+    .brands_heading a
+    {
+        text-decoration: none;
+        color:rgb(19, 161, 19);
+    }
+
+    .brands_grid
+    {
+        width:90%;
+        margin:0 auto;
+    }
+
+    .brands_row
+    {
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 2%;
+    }
+
+    .brands_elem
+    {
+        border:solid 1px;
+        border-radius: 5px;
+        padding:2%;
+        background-color: white;
+    }
+
+    .brands_img
+    {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+        border: solid 1px orange;
+    }
+
+    .brands_img img
+    {
+        max-width:100%;
+        height: auto;
+    }
+
+    .caption
+    {
+        font-size: 2.5vw;
+        margin-top: 3%;
+    }
+
+    /*------------------------------*/
+
+    /*-------7. Idem Scroll-------*/
+
+    .swiper-container2
+    {
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        margin:0 auto;
+        background-color: rgba(253, 216, 216,0.5);
+        padding:2%;
+    }
+
+    .swiper-pagination2
+    {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .swiper-container2 .swiper-slide
+    {
+        background-color: white;
+    }
+
+    .item_img
+    {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item_name,.stock,.red_cost,.cost
+    {
+        text-align: center;
+    }
+
+    .item_name
+    {
+        font-size: 4vw;
+    }
+
+    .stock
+    {
+        font-size:3vw;
+        margin:4% 0;
+    }
+
+    .red_cost
+    {
+        font-size: 3vw;
+        color:red;
+        text-decoration:line-through;
+        margin-bottom:4%;
+    }
+
+    .item_add
+    {
+        background-color: green;
+        color:white;
+        border:none;
+        padding:4% 15%;
+        margin-top:8%;
+        margin-left:27%;
+        border-radius:5px;
+    }
+
+    /*--------------------------------*/
+
+    /*------------8. Plus-----------*/
+
+    .plus
+    {
+        display:inline-block;
+        background-color: green;
+        padding:1%;
+        border-radius:0 15px 0 0;
+        margin-top:10%;
+    }
+
+    .plus img
+    {
+        transform: scale(0.6);
+    }
+
+    /*------------------------------*/
+
+    /*--------Onclick event on ADD button---*/
+
+    .plus_minus
+    {
+        display:flex;
+        justify-content: space-between;
+        margin-top: -30%;
+        visibility: hidden;
+        width:30%;
+        margin:0 auto;
+    }
+
+    .add,.minus
+    {
+        background-color: green;
+        border:none;
+        padding:10%;
+        color:white;
+    }
+
+    .quantity
+    {
+        margin:0 2%;
+    }
+
+    /*--------------------------------------*/
+
+    
+    
+}
